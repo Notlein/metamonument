@@ -1,0 +1,30 @@
+
+###########################
+# 1. Default rule set
+###########################
+User-agent: *
+# Block typical non-public directories
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /config/
+Disallow: /.git/
+Disallow: /node_modules/
+# Block stray files you don’t want indexed
+Disallow: /README*
+Disallow: /LICENSE*
+Disallow: /*.bak$
+Disallow: /*.swp$
+# Let everything else be crawled
+Allow: /
+
+###########################
+# 2. Image-only crawlers
+###########################
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /img/
+###########################
+# 3. Sitemap location
+###########################
+Sitemap: https://metamonument.io/sitemap.xml
