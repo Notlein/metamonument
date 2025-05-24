@@ -1,70 +1,121 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
-    
-  <!-- Metadonnées -->
+  <!-- Basic Meta -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Metamonument 2025</title>
-  
-  <!-- Style et Polices -->
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 1em;
-      background: whitesmoke;
-      color: #333;
-    }
-    .overlay-blur {
-      position: relative;
-      background: rgba(245, 245, 245, 0.3);
-      backdrop-filter: blur(3px);
-      -webkit-backdrop-filter: blur(3px);
-      color: #333;
-      padding: 1rem;
-      margin:1rem 0;
-      border-radius: 8px;
-      border: 1px lightgray solid;
-      z-index: 10;
-    }
+  <meta name="description" content="Metamonument NFT art platform – discover, view, and collect our curated digital artworks." />
+  <link rel="canonical" href="https://metamonument.io/" />
+  <link rel="alternate" href="https://metamonument.net/" hreflang="en" />
 
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Metamonument" />
+  <meta property="og:url" content="https://metamonument.io/" />
+  <meta property="og:title" content="Metamonument 2025" />
+  <meta property="og:description" content="Metamonument NFT art platform – discover, view, and collect our curated digital artworks." />
+  <meta property="og:image" content="https://metamonument.io/og-image.jpg" />
 
-    .overlay-blur * {
-      backdrop-filter: none !important;
-      -webkit-backdrop-filter: none !important;
-    }
-  </style>
-  
-  <!-- Animations -->
-  <style>
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@metamonument" />
+  <meta name="twitter:title" content="Metamonument 2025" />
+  <meta name="twitter:description" content="Metamonument NFT art platform – discover, view, and collect our curated digital artworks." />
+  <meta name="twitter:image" content="https://metamonument.io/twitter-card.jpg" />
 
-  </style>
-  
-  <!-- Librairies et preload -->
+  <!-- JSON-LD for Semantic Web & ArtsData -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Metamonument",
+    "url": "https://metamonument.io",
+    "alternateName": "metamonument.net",
+    "description": "Discover, view, and collect curated NFT artworks."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VisualArtwork",
+    "name": "NFT Title Placeholder",
+    "creator": {
+      "@type": "Person",
+      "name": "Artist Name"
+    },
+    "image": "ipfs://<HASH>/preview.jpg",
+    "url": "https://metamonument.io/artwork/1"
+  }
+  </script>
 
-  
-    <!-- Analytiques -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 
-  
-  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Analytics (replace G-XXXXXXX) -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script> -->
 </head>
 
 <body>
-  <h1>Metamonument</h1>
-  <div class="overlay-blur">
-    <h2>titre h2</h2>
-    <p>lorem ipsum dolkor</p>
-    <p>bla bla</p>
-    <p>test</p>
-  </div>
+  <header class="site-header">
+    <h1>Metamonument</h1>
+    <nav>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <div class="overlay-blur">
-    <h2>titre h2</h2>
-    <p>lorem ipsum dolkor</p>
-    <p>bla bla</p>
-    <p>test</p> 
-  </div>
+  <main>
+    <!-- Static background layer -->
+    <div class="bg-layer"></div>
+
+    <!-- Parallax floating panels -->
+    <section id="gallery" class="panel parallax" data-speed="0.2">
+      <h2>Featured NFT</h2>
+      <div class="media-card">
+        <!-- IPFS-hosted preview -->
+        <!-- <img src="https://ipfs.io/ipfs/<HASH>/preview.jpg" alt="NFT Preview" /> -->
+        <!-- Scroll-mapped video -->
+        <!-- <video
+          id="video1"
+          class="scroll-video"
+          muted
+          loop
+          playsinline
+          data-original="https://ipfs.io/ipfs/<HASH>/animation.mp4"
+          data-fallback="assets/animation.webm">
+          <source src="https://ipfs.io/ipfs/<HASH>/animation.mp4" type="video/mp4" />
+          <source src="assets/animation.webm" type="video/webm" />
+        </video>
+        <a class="buy-btn" href="https://opensea.io/assets/<CONTRACT>/<TOKEN_ID>" target="_blank" rel="noopener">Buy on OpenSea</a> -->
+      </div>
+    </section>
+
+    <section class="panel parallax" data-speed="0.5">
+      <h2>Another Piece</h2>
+      <!-- ...repeat media-card pattern... -->
+    </section>
+
+    <section id="about" class="panel">
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Metamonument</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="scripts.js"></script>
 </body>
-
 </html>
