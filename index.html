@@ -15,15 +15,9 @@
   <meta property="og:site_name" content="Metamonument" />
   <meta property="og:url" content="https://metamonument.io/" />
   <meta property="og:title" content="Metamonument 2025" />
-  <meta property="og:description" content="Metamonument NFT art platform – discover, view, and collect our curated digital artworks." />
+  <meta property="og:description" content="" />
   <meta property="og:image" content="https://metamonument.io/og-image.jpg" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@metamonument" />
-  <meta name="twitter:title" content="Metamonument 2025" />
-  <meta name="twitter:description" content="Metamonument NFT art platform – discover, view, and collect our curated digital artworks." />
-  <meta name="twitter:image" content="https://metamonument.io/twitter-card.jpg" />
 
   <!-- JSON-LD for Semantic Web & ArtsData -->
   <script type="application/ld+json">
@@ -68,10 +62,11 @@
 
 <body>
   <header class="site-header">
-    <h1>Metamonument</h1>
+    <h1>THE METAMONUMENT</h1>
+    <hr style="margin: 1em -1em;">
     <nav>
-      <a href="#gallery">Gallery</a>
       <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -80,14 +75,43 @@
     <!-- Static background layer -->
     <div class="bg-layer"></div>
 
-    <!-- Parallax floating panels -->
+    <section id="about" class="panel parallax" data-speed="0.05">
+      <h2>By Oli Sorenson</h2><br>
+      <div class="inner-box"><p>The text below represents the initial phase in developing the CALQ funded project entitled The
+      Metamonument. Once peer-reviewed, this essay will be integrated into a video animation, and
+      accompanied by a host of related artworks, created as 3D prints, NFTs, self-adhesive vinyl, textile, and
+      other expressive forms. The latter will be assembled into a larger installation, shown at Elektra gallery in
+      Montreal on January 2026, with the aim to erect a monument that informs our present times.</p>
+      
+      <p>If a monument was once considered a physical manifestation and focal point for established or traditional
+      communities, the creation of a similar structure dedicated to current technological, cultural and
+      geopolitical transformations, seems continually challenged by escalating climate change, economic
+      tensions, armed conflicts and other disruptive events, which taken altogether, threaten to ruin our existing
+      civilization(s).</p>
+      
+      <p>Yet rather than come to nihilist conclusions, as keys thinkers have done in previous decades, from
+      Francis Fukuyama’s End of History 1 to Mark Fisher’s Hauntology, 2 the following sections imagine the rise
+      of a monument that might cluster together today’s many crises within deeper patterns; assemble them in
+      a coherent field that some have called the metacrisis. 3 To this end, the metamonument is submitted here
+      as an open, distributed yet somewhat incomplete structure, assisting the viewer to navigate the metacrisis
+      mainly via Hito Steyerl’s concept of poor image and Timothy Morton’s hyperobject.</p>
+      </div>
+      <div class="inner-box ref"><p>1 Fukuyama, Francis. 1992. The End of History and the Last Man. First Free Press trade paperback edition. New York, NY:
+Free Press.</p>
+<p>2 Fisher, Mark. 2014. Ghosts of My Life. Writings on Depression, Hauntology and Lost Futures. Zero Books: London.</p>
+<p>3 The term metacrisis is still in progress, few publications have exhaustively been dedicated to this phenomenon. However,
+many authors already address specific aspects of the metacrisis, which have been compiled here:
+<a href="https://metacrisis.org/META-CRISIS/01.+%F0%9F%93%9D+Resources/Meta-Crisis+Books+%26+Papers">https://metacrisis.org/META-CRISIS/01.+%F0%9F%93%9D+Resources/Meta-Crisis+Books+%26+Papers</a></p></div>
+    </section>
+
     <section id="gallery" class="panel parallax" data-speed="0.2">
-      <h2>Featured NFT</h2>
+      <h2>Gallery</h2>
+      
       <div class="media-card">
         <!-- IPFS-hosted preview -->
-        <!-- <img src="https://ipfs.io/ipfs/<HASH>/preview.jpg" alt="NFT Preview" /> -->
+        <img src="https://ipfs.io/ipfs/<HASH>/preview.jpg" alt="img preview" />
         <!-- Scroll-mapped video -->
-        <!-- <video
+        <video
           id="video1"
           class="scroll-video"
           muted
@@ -98,7 +122,7 @@
           <source src="https://ipfs.io/ipfs/<HASH>/animation.mp4" type="video/mp4" />
           <source src="assets/animation.webm" type="video/webm" />
         </video>
-        <a class="buy-btn" href="https://opensea.io/assets/<CONTRACT>/<TOKEN_ID>" target="_blank" rel="noopener">Buy on OpenSea</a> -->
+        <!-- <a class="buy-btn" href="" target="_blank" rel="noopener">Buy</a> -->
       </div>
     </section>
 
@@ -107,7 +131,7 @@
       <!-- ...repeat media-card pattern... -->
     </section>
 
-    <section id="about" class="panel">
+    <section id="contact" class="panel">
     </section>
   </main>
 
