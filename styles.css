@@ -39,14 +39,12 @@ h1,h2,h3 {
   transition: height .3s ease;   /* animate to smaller height */
 }
 
-/* 2. Big title with a smooth font-size transition */
 .site-header h1 {
   font-size: 3rem;
   transition: font-size .3s ease;
   color: #b2b2b2;
 }
 
-/* 3. Nav block starts invisible (inside the header, below the fold) */
 .sticky-nav {
   opacity: 0;
   position: absolute;
