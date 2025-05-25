@@ -33,3 +33,22 @@
     });
   });
 })();
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const header    = document.querySelector('.site-header');
+  const stickyNav = document.querySelector('.sticky-nav');
+  // calculate when the bottom of the big title hits the top of the viewport
+  const threshold = window.innerHeight - stickyNav.offsetHeight;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > threshold) {
+      header.classList.add('shrink');
+    } else {
+      header.classList.remove('shrink');
+    }
+  });
+});
