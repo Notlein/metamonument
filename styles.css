@@ -25,18 +25,23 @@ h1,h2,h3 {
   margin: 0 .5rem;
   text-decoration: none;
   color: inherit;
+  
+}
+
+.site-header nav a:hover {
+  border-bottom: solid 40px;
 }
 .site-header {
   position: sticky;
-  top: 0;
+  top: 50%;
   z-index: 10;
   overflow: hidden;              /* hide the nav until you scroll */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  background: transparent;
   height: 100vh;                 /* full viewport initially */
-  transition: height .3s ease;   /* animate to smaller height */
+  transition: .3s ease;   /* animate to smaller height */
 }
 
 .site-header h1 {
@@ -48,14 +53,15 @@ h1,h2,h3 {
 .sticky-nav {
   opacity: 0;
   position: absolute;
-  
+
   transition: opacity .3s ease;
 }
 
 .site-header.shrink {
-  height: 80vh;                  /* pick a small header height */
-  justify-content: flex-start;   /* pin content to top */
-  padding-top: .5rem;            /* breathing room above nav */
+  height: calc(5vh + 2em);                  /* pick a small header height */
+  top:0;
+  background:rgba(0,0,0,0.1);
+  padding-top: 1rem;            /* breathing room above nav */
 }
 
 .site-header.shrink h1 {
@@ -63,7 +69,6 @@ h1,h2,h3 {
 }
 .site-header.shrink .sticky-nav {
   opacity: 1;
-  
   position: relative;
 }
 
