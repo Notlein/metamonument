@@ -25,7 +25,7 @@ h1,h2,h3 {
   margin: 0 .5rem;
   text-decoration: none;
   color: inherit;
-  
+   
 }
 
 .site-header nav a:hover {
@@ -33,7 +33,7 @@ h1,h2,h3 {
 }
 .site-header {
   position: sticky;
-  top: 50%;
+  top: 45%;
   z-index: 10;
   overflow: hidden;              /* hide the nav until you scroll */
   display: flex;
@@ -41,12 +41,12 @@ h1,h2,h3 {
   align-items: center;
   background: transparent;
   height: 100vh;                 /* full viewport initially */
-  transition: .3s ease;   /* animate to smaller height */
+  transition: .5s ease;   /* animate to smaller height */
 }
 
 .site-header h1 {
   font-size: 3rem;
-  transition: font-size .3s ease;
+  transition: font-size .5s ease;
   color: #b2b2b2;
 }
 
@@ -54,11 +54,11 @@ h1,h2,h3 {
   opacity: 0;
   position: absolute;
 
-  transition: opacity .3s ease;
+  transition: opacity .5s ease;
 }
 
 .site-header.shrink {
-  height: calc(5vh + 2em);                  /* pick a small header height */
+  height: 6em;                  /* pick a small header height */
   top:0;
   background:rgba(0,0,0,0.1);
   padding-top: 1rem;            /* breathing room above nav */
@@ -95,6 +95,11 @@ p{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.inner-box h2{
+  max-width:860px;
+  width: 100%;
 }
 .ref{
   font-size: x-small;
